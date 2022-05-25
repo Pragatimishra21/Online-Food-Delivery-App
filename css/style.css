@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --navbar-height :40px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 70%;
+    width: 100%;
+    z-index:-1;
+    opacity: 0.8;
+} 
+#logo{
+    margin: 10px 10px;
+}
+#logo img{
+    margin: 10px 10px;
+}
+ul{
+    display: flex;
+}
+ul li{
+ color: white;
+ list-style: none;
+ font-size: 1.5rem;
+}
+ul li a{
+    color: blanchedalmond;
+    display: block;
+    padding: 3px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+ul li a:hover{
+    color: cornflowerblue;
+    background-color: darkkhaki;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+    height: 475px;
+}
+#home::before{
+    content: "";
+    background: url(../bg.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    z-index:-1;
+    opacity: 0.6;  
+}
+#home h1{
+    color: black;
+    text-align: center;
+}
+#home p{
+    color: black;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.h1-primary{
+    font-size: 3rem;
+    padding: 15px;
+    margin: 30px 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.h-primary-center{
+    font-size: 2.5rem;
+    padding: 30px 10px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.h-secondary{
+    font-size: 1.5rem;
+    padding: 12px;
+}
+.btn{
+    padding: 10px 25px;
+    border: 2px solid white;
+    background-color: rgb(179, 111, 24);
+    color: white;
+    margin: 15px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+#services{
+    justify-content: center;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 15px;
+    margin: 5px;
+    background-color: rgb(221, 175, 157);
+    border-radius: 20px;
+}
+#services .box img{
+    height: 140px;
+    margin: auto;
+    display: block;
+}
+#client-section{
+height: 500px;
+margin-top: 50px;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 15vh;
+}
+#client-section .h-primary-center{
+    font-size: 2.5rem;
+    padding: 30px 10px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.client-item{
+    padding: 20px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../bg1.jpg') center/cover;
+    width: 100%;
+    height: 80%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#contact{
+position: relative;
+margin-top: 50px;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../contact.jpg') no-repeat center center/cover ;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+    height: 5vh;
+}
+footer .center{
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+ #contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+} 
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.4rem;
+    border-radius: 15px;
+    font-size: 1rem;
+}
+#contact-box form{
+    width: 50%;
+}
+#contact-box label{
+    font-size: 1.2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
